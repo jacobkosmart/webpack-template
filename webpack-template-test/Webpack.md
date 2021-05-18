@@ -311,44 +311,10 @@ node_modules
 dist
 ```
 
-2. github 에 push 하기
-
-```bash
-$ git init
-$ git add .
-$ git commit -m 'add webpack-template'
-$ git remote add origin https://github.com/jacobkosmart/webpack-template.git
-$ git push origin master
-```
-
-![image](https://user-images.githubusercontent.com/28912774/118608193-6176a200-b7f4-11eb-9ff1-85dae74442f4.png)
-
-3. Netilfy 에서 설정 확인
-
-- Github repository 와 연결 후 , build command, publish drectory 확인 하여야 함
-
-  - `build command` : npm project 에서 parcel, webpack 사용할 때 제품화 하는 명령어가 동일한지 확인 (defalut : `npm run build`)
-
-  - `Publish directory` : bundler 를 통해 complie 된 파일들이 저장된 경로 확인 (defalut : `dist`)
-
-![image](https://user-images.githubusercontent.com/28912774/118608193-6176a200-b7f4-11eb-9ff1-85dae74442f4.png)
-
-4. 제품화된 배포 사이트 확인
-
-## 10.NPX, Degit
-
-- 배포한 webpack template 을 CLI 를 통해서 new npm project 환경 setup 하기
-
-```bash
-$ npx degit jacobkosmart/webpack-template webpack-template-test # npx 를 통해 degit 을 따로 설치 하지 않아도 github repository 를 현재 경로에서 webpack-tempate-test 폴더에 pull 한다는 명령어임
-```
-
-- new project 에 .git init 을 해서 버전관리를 추가해서 Project 진행 하면 됩니다.
-
-- git clone 저장소 주소 : 이거는 git 에 저장된 repository 를 그대로 복재 하는건데(모든 git 버전 관리된게 포함되어서..), template 경우 새로운 project 를 시작하는거기 때문에, 적합하지 않습니다.
-
 🔶 🔷 📌 🔑
 
 ## Reference
 
-- Webpack Official site - [https://webpack.js.org/](https://webpack.js.org/)
+- Parcel Official site - [https://parceljs.org/](https://parceljs.org/)
+
+- HERORY Tech - [https://heropy.blog/2018/01/20/parcel-1-start/](https://heropy.blog/2018/01/20/parcel-1-start/)
