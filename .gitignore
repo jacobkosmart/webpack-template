@@ -1,0 +1,5 @@
+.cache
+# .DS_Store는 Mac OS 만..
+.DS_Store 
+node_modules
+dist
